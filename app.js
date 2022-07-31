@@ -2,7 +2,6 @@ const userInput = document.querySelector("#user-input");
 const ctaButton = document.querySelector("#cta");
 const locationButton = document.querySelector("#btnlocation");
 const divInHtml = document.querySelector(".result")
-const apiKey = '6ffec033c2cb89b60376f6b6152a497b';
 
 ctaButton.addEventListener("click", function(){
     getWeatherApi();
@@ -130,7 +129,7 @@ function getWeatherApiByLocation(){
         navigator.geolocation.getCurrentPosition((position) => {
         let {latitude,longitude} = position.coords;
         // let lon = position.coords.longitude;
-        const dataLocation = fetch('https://api.openweathermap.org/data/2.5/weather?lat='+latitude+'&lon='+longitude+'&appid='+apiKey)
+        const dataLocation = fetch('https://api.openweathermap.org/data/2.5/weather?lat='+latitude+'&lon='+longitude+'&appid='+process.env.apiKey)
         .then(response => response.json()).then(locationdata =>{
             const {icon} = locationdata.weather[0];
 
