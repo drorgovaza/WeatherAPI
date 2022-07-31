@@ -1,0 +1,285 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+.row{
+    width: 100%;
+    height: 100vh;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1000%26quot%3b)' fill='none'%3e%3crect width='1440' height='560' x='0' y='0' fill='%231e3266'%3e%3c/rect%3e%3cpath d='M1512 560L0 560 L0 299.76Q95.34 275.1%2c 120 370.44Q151.06 281.5%2c 240 312.55Q267.36 267.91%2c 312 295.28Q368.29 279.57%2c 384 335.86Q416.81 248.67%2c 504 281.47Q549.78 255.25%2c 576 301.04Q672.26 277.3%2c 696 373.56Q722.19 327.75%2c 768 353.94Q821.96 287.9%2c 888 341.86Q902.07 283.93%2c 960 298Q1011.97 229.97%2c 1080 281.94Q1178.37 260.31%2c 1200 358.68Q1230.54 317.22%2c 1272 347.75Q1318.16 273.91%2c 1392 320.07Q1435.43 243.5%2c 1512 286.94z' fill='%23182f5d'%3e%3c/path%3e%3cpath d='M1512 560L0 560 L0 406.41Q25.32 359.73%2c 72 385.05Q97.82 338.87%2c 144 364.68Q173.71 322.39%2c 216 352.1Q279.5 343.61%2c 288 407.11Q307.88 354.99%2c 360 374.87Q444.06 338.93%2c 480 422.98Q523.68 394.66%2c 552 438.34Q570.88 385.23%2c 624 404.11Q634.85 342.96%2c 696 353.81Q769.62 307.43%2c 816 381.05Q868.07 313.12%2c 936 365.18Q1021.5 330.68%2c 1056 416.18Q1073.64 361.82%2c 1128 379.46Q1174.15 305.61%2c 1248 351.76Q1330.06 313.82%2c 1368 395.88Q1424.53 380.41%2c 1440 436.95Q1465.1 390.04%2c 1512 415.14z' fill='%2325467d'%3e%3c/path%3e%3cpath d='M1464 560L0 560 L0 492.33Q2.94 423.27%2c 72 426.21Q138.64 372.85%2c 192 439.48Q261.78 389.26%2c 312 459.04Q353.16 428.2%2c 384 469.36Q403.91 417.27%2c 456 437.18Q537.45 398.63%2c 576 480.08Q618.14 450.22%2c 648 492.36Q653.78 426.14%2c 720 431.93Q789.9 381.84%2c 840 451.74Q913.55 405.29%2c 960 478.84Q1014.1 460.93%2c 1032 515.03Q1061.72 472.75%2c 1104 502.46Q1130.39 456.86%2c 1176 483.25Q1206.68 441.94%2c 1248 472.62Q1266.64 419.26%2c 1320 437.91Q1364.22 410.13%2c 1392 454.36Q1440.83 431.19%2c 1464 480.01z' fill='%23356cb1'%3e%3c/path%3e%3cpath d='M1488 560L0 560 L0 539.57Q40.56 508.13%2c 72 548.7Q146.33 503.03%2c 192 577.35Q219.01 532.37%2c 264 559.38Q276.93 500.31%2c 336 513.23Q402.91 460.14%2c 456 527.06Q516.68 515.74%2c 528 576.42Q544.75 521.17%2c 600 537.93Q654.04 471.97%2c 720 526.01Q786.38 520.39%2c 792 586.78Q833.47 508.25%2c 912 549.71Q959.93 525.64%2c 984 573.57Q1003.04 520.61%2c 1056 539.65Q1109.69 473.34%2c 1176 527.03Q1224.11 455.14%2c 1296 503.25Q1326.7 461.95%2c 1368 492.65Q1444.44 449.09%2c 1488 525.54z' fill='white'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1000'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #00FFFF;
+    padding: 2% 8%;
+    font-family: 'Roboto', sans-serif;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: 0.2fr 2fr ;
+    grid-template-areas: 
+    "nav nav"
+    "main content";
+
+    
+    /* PREVENT COPY FROM WEBSITE */
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+
+}
+nav{
+    grid-area: nav;    
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+nav > h3{
+    font-size: 2rem;
+    font-family: 'Russo One', sans-serif;   
+
+}
+main{
+    grid-area: main;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+}
+main>h1{
+    font-family: 'Russo One', sans-serif;   
+    font-weight: 400;
+    font-size: 3.5rem;
+}
+main>h1>strong{
+    color: yellowgreen;
+}
+main>p{
+    line-height: 2rem;
+    
+}
+.maindiv{
+    grid-area: content;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    
+}
+.maindiv>label{
+    text-transform: uppercase;
+    font-family: 'Russo One', sans-serif;   
+    color: yellowgreen;
+    text-align: center;
+    padding: 1rem;
+}
+.maindiv>input{
+    border-radius: 1rem;
+    border-top-right-radius: 0;
+    padding: 0.5rem 5rem;
+    margin-bottom: 0.5rem;
+    font-family: 'Russo One', sans-serif;  
+    outline: none;
+    border: none;
+    text-transform: uppercase;
+    
+}
+.maindiv>button{
+    border-radius: 1rem;
+    border-top-right-radius: 0;
+    border: none;
+    padding: 0.5rem 1rem;
+    margin-bottom: 0.5rem;
+    font-family: 'Russo One', sans-serif;  
+    outline: none;
+    cursor: pointer;
+    filter:drop-shadow(5px 5px 5px
+    hsl(20deg 0% 0%  / 0.5));
+}
+.maindiv>button:hover{
+    border-radius: 1rem;
+    border-top-right-radius: 0;
+    /* border: 2px solid #ff587b; */
+    padding: 0.5rem 1rem;
+    margin-bottom: 0.5rem;
+    font-family: 'Russo One', sans-serif;  
+    outline: none;
+    cursor: pointer;
+    color: #00FFFF;
+    background: yellowgreen;
+    transition: all 0.5s ease;
+    filter:drop-shadow(5px 5px 5px
+    hsl(20deg 0% 0%  / 0.5));
+}
+.result{
+    display: none;
+    background: #ff587b;
+    grid-column:1/-1;
+    grid-row: 1/-1; 
+    align-items: center;
+    align-content: center;
+    font-family: 'Roboto', sans-serif;
+    width: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    filter:drop-shadow(5px 5px 5px
+    hsl(25deg 0% 0%  / 0.5));
+    border-radius: 1rem;
+
+    
+
+}
+.container{
+    display: grid;
+    align-items: center;
+    align-content: center;
+    grid-column:1/-1;
+    grid-row: 1/-1; 
+    text-align: center;
+    
+    
+
+}
+.container >.close-btn{
+    width: 20%;
+    display: grid;
+    align-content: center;
+    cursor: pointer;
+    justify-self: center;
+    color: yellowgreen;
+    border: 1px solid yellowgreen;
+    background: transparent;
+    margin: 1rem;
+    padding: 0.5rem 1.2rem;
+    font-family: 'Russo One', sans-serif;  
+
+
+}
+.container >.close-btn:hover{
+    width: 20%;
+    display: grid;
+    align-content: center;
+    cursor: pointer;
+    justify-self: center;
+    color: black;
+    border: 1px solid black;
+    background: yellowgreen;
+    margin: 1rem;
+    transition: 1s ease all;
+    padding: 0.5rem 1.2rem;
+    font-family: 'Russo One', sans-serif;  
+    filter:drop-shadow(5px 5px 5px
+    hsl(20deg 0% 0%  / 0.5));
+    
+
+
+}
+.error-pop{
+    display: grid;
+    grid-column: 1/-1;
+    grid-row: 1/-1;
+    background: yellowgreen;
+    color: #00FFFF;
+    text-align: center;
+    min-height: 50vh;
+    font-size: 2rem;
+    padding: 2rem;
+    width: 100%;
+    align-content: center;
+    border-radius: 1rem;
+}
+.button-error{
+    border-radius: 1rem;
+    border-top-right-radius: 0;
+    border: none;
+    padding: 0.5rem 1rem;
+    margin-bottom: 0.5rem;
+    font-family: 'Russo One', sans-serif;  
+    outline: none;
+    cursor: pointer;
+    filter:drop-shadow(5px 5px 5px
+        hsl(10deg 0% 0%  / 0.5));
+}
+@media only screen and (max-width: 730px) {
+.row{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.2fr auto;
+    grid-template-areas: "nav"
+    "main"
+    "content";
+}
+nav{
+    grid-area: nav;
+    margin: 0.5rem;
+} nav>h3{
+    font-size: 1rem;
+}
+.maindiv{
+    display: grid;
+    align-items: center;
+    align-content: flex-start;
+    grid-area: content;
+    
+}
+.maindiv>input{
+    border-radius: 1rem;
+    border-top-right-radius: 0;
+    border: none;
+    padding: 0.5rem 1rem;
+    margin-bottom: 0.5rem;
+    font-family: 'Russo One', sans-serif;  
+    outline: none;
+    
+}
+.maindiv>button{
+    border-radius: 1rem;
+    border-top-right-radius: 0;
+    border: 1px solid #ff587b;
+    padding: 0.5rem 1rem;
+    margin-bottom: 0.5rem;
+    font-family: 'Russo One', sans-serif;  
+    outline: none;
+    cursor: pointer;
+    background: #00FFFF;
+}
+.maindiv>label{
+    text-transform: uppercase;
+}
+.maindiv>button:hover{
+    border-radius: 1rem;
+    border-top-right-radius: 0;
+    border: 1px solid #00FFFF;
+    padding: 0.5rem 1rem;
+    margin-bottom: 0.5rem;
+    font-family: 'Russo One', sans-serif;  
+    outline: none;
+    cursor: pointer;
+    color: #00FFFF;
+    background: yellowgreen;
+    transition: all 0.5s ease;
+}
+main{
+    grid-area: main;
+}
+main>h1{
+    font-family: 'Russo One', sans-serif;   
+    font-weight: 400;
+    font-size: 2.5rem;
+}
+main>p{
+    padding-top: 0.5rem;
+    line-height: 1.4rem;
+    
+}
+.error-pop{
+    display: grid;
+    grid-column: 1/-1;
+    grid-row: 1/-1;
+    background: yellowgreen;
+    color: #00FFFF;
+}
+}
