@@ -18,7 +18,7 @@ async function getWeatherApi() {
         let dataFromUser = userInput.value;
         /* START FETCH DATA..... */
 
-        const ddata = await fetch('https://api.openweathermap.org/data/2.5/weather?q=' + dataFromUser + '&appid=' + apiKey + '&units=metric')
+        const ddata = await fetch('https://api.openweathermap.org/data/2.5/weather?q=' + dataFromUser + '&appid=' + process.env.apiKey + '&units=metric')
             /* CONVERT DATA TO JSON AND AFTER WE GET THE OBJECT WITH INFORMATION */
 
             .then(response => response.json()).then(weatherdata => {
